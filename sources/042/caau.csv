@@ -1,0 +1,21 @@
+no_court,id_caau,date_notification,is_national,is_pflau_connected,adresse,cp,ville,no_long,a_compter_du,ancien_no_long,jusqu_au,seuil_warning,seuil_alerte,timezone,contact_local,tel_contact_local,email_contact_local
+version=1.537,chrono=4336041454,dept=42,nb_communes=327,nb_CAAU=19,nb_chgts_pdaa=0,nb_chgts_caau=0,,,,,,,,,,,
+15,FR420SAMA,01/01/2000,non,oui,"TEST ADDRESS",42270,Saint-Priest-en-Jarez,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+15,FR420SAMB,01/01/2000,non,oui,"TEST ADDRESS",42328,Roanne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+17,FR420PNAA,01/01/2000,non,oui,"TEST ADDRESS",42100,Saint-Étienne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+17,FR420PNAB,01/01/2000,non,oui,"TEST ADDRESS",42000,Saint-Étienne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+18,FR420SDIA,01/01/2000,non,oui,"TEST ADDRESS",42000,Saint-Étienne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+18,FR420SDIB,01/01/2000,non,oui,"TEST ADDRESS",42300,Roanne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+112,FR420SDIC,01/01/2000,non,oui,"TEST ADDRESS",42000,Saint-Étienne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,+33102030405
+114,FR380C114,01/01/2000,oui,oui,"TEST ADDRESS",38043,Grenoble,114,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+115,FR420C115,01/01/2000,non,oui,"TEST ADDRESS",42000,Saint-Étienne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+116000,FR940C116,01/01/2000,oui,oui,"TEST ADDRESS",94200,Ivry-sur-Seine,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+119,FR750C119,01/01/2000,oui,oui,"TEST ADDRESS",75823,Victor Hugo,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+191,FR690C191,01/01/2000,non,oui,"TEST ADDRESS",69579,Victor Hugo,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+196,FR620C196,01/01/2000,non,oui,"TEST ADDRESS",62179,Audinghem,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+197,FR920C197,01/01/2000,oui,oui,"TEST ADDRESS",92000,Nanterre,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+1121,FR790SNSA,01/01/2000,oui,oui,"TEST ADDRESS",79180,Chauray,+33102030405,,,,200,1000,Europe/Paris,,,fake@toto.com,sans objet
+1122,FR790SNSB,01/01/2000,oui,oui,"TEST ADDRESS",79180,Chauray,+33102030405,,,,200,1000,Europe/Paris,,,fake@toto.com,sans objet
+116111,FR750GPED,01/01/2000,oui,oui,"TEST ADDRESS",75823,Victor Hugo,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+116117,FR420PDSA,01/01/2000,non,oui,"TEST ADDRESS",42270,Saint-Priest-en-Jarez,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
+116117,FR420PDSB,01/01/2000,non,oui,"TEST ADDRESS",42328,Roanne,+33102030405,,,,200,1000,Europe/Paris,Victor Hugo,+33102030405,fake@toto.com,sans objet
