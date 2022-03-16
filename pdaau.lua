@@ -1,4 +1,4 @@
-local pdaa = {}
+local pdaau = {}
 
 local rootdir = os.getenv('PDAAU_ROOT_DIR')
 if rootdir == nil then
@@ -16,7 +16,7 @@ local file_exists = function (file)
 end
 
 
-function pdaa.get_directory_from_insee (code)
+function pdaau.get_directory_from_insee (code)
     -- If code startswith 2A -> Corse-du-Sud -> 201
     if startswith(code, '2A') then
         return "201"
@@ -32,7 +32,7 @@ function pdaa.get_directory_from_insee (code)
     return string.format("%03d", string.sub(code, 0, 2))
 end
 
-function pdaa.parse_csv_line (line, sep)
+function pdaau.parse_csv_line (line, sep)
     local res = {}
     local pos = 1
     sep = sep or ','
@@ -73,7 +73,7 @@ function pdaa.parse_csv_line (line, sep)
 end
 
 
-function pdaa.get_unique_line_starting_with (file, pattern)
+function pdaau.get_unique_line_starting_with (file, pattern)
     if not file_exists(file) then return nil end
     local lines = {}
     for line in io.lines(file) do
@@ -89,8 +89,8 @@ function pdaa.get_unique_line_starting_with (file, pattern)
     end
 end
 
-function pdaa.translate (dialled_number, insee_code)
-    local directory = pdaa.get_directory_from_insee(insee_code)
+function pdaau.translate (dialled_number, insee_code)
+    local directory = pdaau.get_directory_from_insee(insee_code)
 
     -- build path of wanted files
     local pdaa_file = rootdir .. '/' .. directory .. '/pdaa.csv'
@@ -98,22 +98,22 @@ function pdaa.translate (dialled_number, insee_code)
 
     -- read pdaa
     local pdaa_search = insee_code .. "," .. dialled_number
-    local pdaa_line = pdaa.get_unique_line_starting_with(pdaa_file, pdaa_search)
+    local pdaa_line = pdaau.get_unique_line_starting_with(pdaa_file, pdaa_search)
     if pdaa_line == nil then 
         return nil
     end
-    local parsed_pdaa_line = pdaa.parse_csv_line(pdaa_line, ',')
+    local parsed_pdaa_line = pdaau.parse_csv_line(pdaa_line, ',')
     local pdaa_code = parsed_pdaa_line[5]
 
     --search caau
     local caau_search = dialled_number .. "," .. pdaa_code
-    local caau_line = pdaa.get_unique_line_starting_with(caau_file, caau_search)
+    local caau_line = pdaau.get_unique_line_starting_with(caau_file, caau_search)
     if caau_line == nil then
         return nil
     end
-    local parsed_caau_line = pdaa.parse_csv_line(caau_line, ',')
+    local parsed_caau_line = pdaau.parse_csv_line(caau_line, ',')
     local final_number = parsed_caau_line[9]
     return final_number
 end
 
-return pdaa
+return pdaau
